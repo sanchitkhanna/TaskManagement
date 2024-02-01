@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagement.DAL", "TaskM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagement.BLL.UnitTests", "TaskManagement.BLL.Tests\TaskManagement.BLL.UnitTests.csproj", "{93A4474F-5F63-45B8-853E-FA83C195B890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagement.IntegrationTests", "TaskManagement.IntegrationTests\TaskManagement.IntegrationTests.csproj", "{7F42E779-89DE-4B33-8433-E0DC6FAAE95D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +37,6 @@ Global
 		{93A4474F-5F63-45B8-853E-FA83C195B890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93A4474F-5F63-45B8-853E-FA83C195B890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93A4474F-5F63-45B8-853E-FA83C195B890}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F42E779-89DE-4B33-8433-E0DC6FAAE95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F42E779-89DE-4B33-8433-E0DC6FAAE95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F42E779-89DE-4B33-8433-E0DC6FAAE95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F42E779-89DE-4B33-8433-E0DC6FAAE95D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,7 +46,6 @@ Global
 		{7822EEC4-4CB8-4D93-8633-A0A7638274C2} = {086D2684-57C0-4B19-8ECA-05C8E0996CC7}
 		{BF8C1ACD-F0EA-48D5-B1A7-63C7CA1B6F85} = {086D2684-57C0-4B19-8ECA-05C8E0996CC7}
 		{93A4474F-5F63-45B8-853E-FA83C195B890} = {20EA15AD-BB6A-4BE1-BEFE-0CA8A703C06D}
-		{7F42E779-89DE-4B33-8433-E0DC6FAAE95D} = {20EA15AD-BB6A-4BE1-BEFE-0CA8A703C06D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C76AA0F-01F7-4D41-8B1D-644A2FF8D398}
