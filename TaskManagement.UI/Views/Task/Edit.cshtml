@@ -1,0 +1,38 @@
+﻿@model TaskUpdateRequest
+
+<h1>Edit Task</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="TaskId" />
+    <div class="mb-3">
+        <label asp-for="Name">Name</label>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Enter Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description">Description</label>
+        <textarea class="form-control" asp-for="Description" placeholder="Enter Description"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Deadline">Deadline</label>
+        <input type="text" class="form-control" id="datepicker" asp-for="Deadline" autocomplete="off" asp-format="{0:dd'/'MM'/'yyyy}">
+        <span asp-validation-for="Deadline" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Task" role="button">Cancel</a>
+</form>
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />
+<script type="text/javascript">
+    $('#datepicker').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                minDate: 0,
+                dateFormat: "dd/mm/yy",
+                defaultDate: this.value
+            });
+</script>
+
+}

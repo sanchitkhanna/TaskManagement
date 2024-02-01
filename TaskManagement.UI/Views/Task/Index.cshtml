@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TaskResponse>
+
+
+<h2>Task List</h2>
+<a class="btn btn-primary" asp-action="Create" role="button">Create New Task</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.Name</td>
+                <td>@task.Description</td>
+                <td>@task.Deadline?.ToLongDateString()</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="Edit" asp-controller="Task" asp-route-id="@task.TaskId" role="button">Edit</a>
+                    <a class="btn btn-primary deleteButton" asp-action="Delete" asp-controller="Task" asp-route-id="@task.TaskId" role="button">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
